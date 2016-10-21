@@ -48,7 +48,7 @@ function barChart(type){
             .append("g")
             .attr("transform","translate("+margin.left+","+margin.top+")");
 
-    d3.csv("hw1_q2.csv",function(error,data){
+    d3.csv("us_edu_attainment.csv",function(error,data){
 
         x.domain(data.map(function(d){return d.state;}));
         if(type === "HSGOM"){
